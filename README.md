@@ -1,9 +1,11 @@
 🎵 Mood vs Music 🎧 
+
 A Data Analytics project that uses machine learning to classify songs into moods — Happy, Sad, Calm, or Energetic — based on audio features like valence, energy, and tempo.
 
 
 
 💡 Project Overview
+
 Mood vs Music is a data analytics and machine learning project designed to predict the mood of a song based on its audio features.
 Using a Random Forest Classifier, the project identifies patterns in song data and classifies each track into one of the following categories:
 
