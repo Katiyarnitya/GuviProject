@@ -1,0 +1,15 @@
+# Ensure data integrity and consistency
+# 1. Remove duplicates
+df = df.drop_duplicates()
+
+# 2. Handle inconsistent capitalization
+df['title'] = df['title'].str.strip().str.title()
+df['artist'] = df['artist'].str.strip().str.title()
+
+# 3. Validate feature ranges
+# Valence, energy, and danceability should be between 0 and 1
+for col in ['valence', 'energy', 'danceability']:
+    df = df[(df[col] >= 0) & (df[col] <= 1)]
+
+# 4. Check for nulls
+print(df.isnull().sum())

@@ -1,0 +1,14 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Heatmap of feature correlations
+sns.heatmap(df.corr(), annot=True)
+plt.title("Correlation Heatmap")
+plt.show()
+
+# Mood vs Valence Distribution
+sns.boxplot(x='mood', y='valence', data=df)
+plt.title("Valence Distribution Across Moods")
+plt.show()
+
+# Trend: Songs with high energy often lean toward 'Energetic' and 'Happy' labels

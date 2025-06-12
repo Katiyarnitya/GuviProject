@@ -1,0 +1,11 @@
+# Summary statistics
+print(df.describe())
+
+# Insight: Average energy and valence
+avg_valence = df['valence'].mean()
+avg_energy = df['energy'].mean()
+print(f"Average Valence (mood): {avg_valence:.2f}")
+print(f"Average Energy: {avg_energy:.2f}")
+
+# Insight: Most common mood
+print(df['mood'].value_counts())
